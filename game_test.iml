@@ -8,11 +8,13 @@
       <sourceFolder url="file://$MODULE_DIR$/resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/clj" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/cljs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tests/cljs" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Leiningen: clojure-complete:0.2.3" level="project" />
+    <orderEntry type="library" name="Leiningen: com.cemerick/clojurescript.test:0.3.1" level="project" />
     <orderEntry type="library" name="Leiningen: compojure:1.1.8" level="project" />
     <orderEntry type="library" name="Leiningen: enlive:1.1.5" level="project" />
     <orderEntry type="library" name="Leiningen: environ:0.5.0" level="project" />
