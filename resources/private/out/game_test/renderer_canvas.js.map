@@ -1,0 +1,13 @@
+{"version":3,
+ "file":
+ "/C:/Projects-git/tmp/game-test/resources/private/out/game_test/renderer_canvas.js",
+ "sources":["renderer_canvas.cljs"],
+ "lineCount":15,
+ "mappings":
+ ";AAAA;;AAEA,2CAAA,yDAAA,pGAAMA,oEAAgBC,IAAIC,aAAaC,eACrC,KAAA,eAAA,nBAAMF;AACN,oBAAA,IAAA,jBAAWA,qBAAQC,aAAaC;;AAElC,wCAAA,kCAAA,1EAAMC,8DAAaH,IAAII,QACrB,weAAA,IAAA,xeAAMC,IAAE,kCAAA,mFAAA,yDAAA,9KAACC,2BAAOF,+MACVG,IAAE,kCAAA,mFAAA,yDAAA,9KAACD,2BAAOF,gNACVI,WACJ,OAAWR,aAAIK,EAAEE,EAAEC,KAAKA;;AAG5B,0CAAA,sCAAA,hFAAMC,kEAAeT,IAAIU,UACvB,WAAA,XAAM,AAAQV;AACd,KAAA,eAAA,nBAAMA;AACN,OAACW,0BAAM,wBAAA,WAAAC,kBAAA,rDAACC,qDAAK,2DAAAD,pDAACT,gDAAYH;GAAOU",
+ "names":
+ ["game-test.renderer-canvas/draw-playfield", "ctx", "canvas-width",
+  "canvas-height", "game-test.renderer-canvas/draw-entity", "entity",
+  "x", "cljs.core/get-in", "y", "size",
+  "game-test.renderer-canvas/draw-entities", "entities",
+  "cljs.core/doall", "p1__13373#", "cljs.core/map"]}

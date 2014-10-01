@@ -1,0 +1,8 @@
+{"version":3,
+ "file":
+ "/C:/Projects-git/tmp/game-test/resources/private/out/game_test/utils.js",
+ "sources":["utils.cljs"],
+ "lineCount":7,
+ "mappings":
+ ";AAAA;;AAEA,0BAAA,uBAAA,jDAAMA,4CAASC,EAAEC,GACf,QAAGD,IAAEC",
+ "names":["game-test.utils/testfun", "a", "b"]}
