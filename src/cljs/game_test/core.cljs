@@ -15,7 +15,7 @@
 (if localhost?
   (enable-console-print!))
 
-(defonce app-state (atom {:text "*@*#*#"}))
+(defonce app-state (atom {:text "------"}))
 
 (om/root
   (fn [app owner]
@@ -32,7 +32,16 @@
 (def ctx (setup/setup-canvas canvas-width canvas-height))
 (def entities (atom [
                       {
-                        :coords {:x 123 :y 147}
+                        :coords {:x 0 :y 0}
+                        }
+                      {
+                        :coords {:x 1 :y 1}
+                        }
+                      {
+                        :coords {:x 2 :y 1}
+                        }
+                      {
+                        :coords {:x 3 :y 1}
                         }
                       ]))
 
