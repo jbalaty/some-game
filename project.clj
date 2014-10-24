@@ -17,7 +17,8 @@
                  [com.cemerick/clojurescript.test "0.3.1"]]
 
   :plugins [[com.cemerick/austin "0.1.5-SNAPSHOT"]
-            [lein-cljsbuild "1.0.3"]]
+            [lein-cljsbuild "1.0.3"]
+            [com.cemerick/clojurescript.test "0.3.1" ]]
 
   :min-lein-version "2.0.0"
 
@@ -32,11 +33,15 @@
                                         :pretty-print  true
                                         :source-map    true}}
                        :test {:source-paths ["src/cljs" "tests/cljs"]
-                              :compiler {:output-to     "resources/private/app.js"
+                              :compiler {:output-to     "resources/private/unit-tests.js"
                                          :output-dir    "resources/private/out"
-                                         :optimizations :none
-                                         :pretty-print  true
-                                         :source-map    true}}}}
+                                         :optimizations :whitespace
+                                         :pretty-print  true}}}
+              :test-commands {"unit-tests" ["phantomjs" :runner
+                                            "this.literal_js_was_evaluated=true"
+                                            "resources/private/react-0.11.1.js"
+                                            "resources/private/unit-tests.js"
+                                            ]}}
 
   :profiles {:dev {:repl-options {:init-ns game-test.server}
                    :plugins [[lein-figwheel "0.1.3-SNAPSHOT"]]

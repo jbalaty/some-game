@@ -9,3 +9,14 @@
     (aset canvas "height" canvas-height)
     (.getContext canvas "2d"))
   )
+
+(defn setup-render [type]
+  (case type
+    :canvas (let [canvas-width 400
+                  canvas-height 400
+                  ctx (setup-canvas canvas-width canvas-height)
+                  ]
+              {:context ctx :canvas-width canvas-width :canvas-height canvas-height})
+    :html nil
+    )
+  )
