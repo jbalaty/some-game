@@ -1,9 +1,11 @@
 (ns game-test.renderer-canvas)
 
 (defn draw-playfield [renderer]
-  (let [ctx (:context renderer)]
+  (let [ctx (:context renderer)
+        dims (:dimensions renderer)
+        [cw ch] dims]
     (aset ctx "fillStyle" "#FFFFFF")
-    (.fillRect ctx 0 0 (:canvas-width renderer) (:canvas-height renderer)))
+    (.fillRect ctx 0 0 cw ch))
   )
 
 (defn draw-entity [ctx entity]

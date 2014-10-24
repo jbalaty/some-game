@@ -16,7 +16,7 @@
                   canvas-height 400
                   ctx (setup-canvas canvas-width canvas-height)
                   ]
-              {:context ctx :canvas-width canvas-width :canvas-height canvas-height})
+              {:context ctx :dimensions [canvas-height canvas-width]})
     :html nil
     )
   )

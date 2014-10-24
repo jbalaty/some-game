@@ -26,7 +26,8 @@
   {:target (. js/document (getElementById "app"))})
 
 ;; START OF TEST CODE
-(def world (atom {:entities [
+(def world (atom { :dimensions [1000 1000]
+                   :entities [
                         {
                           :name   "a"
                           :coords {:x 0 :y 0}
